@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { mount } from "marketing/MarketingApp";
+import { mount } from "auth/AuthApp";
+import { useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 
 export default () => {
@@ -11,6 +11,7 @@ export default () => {
       initialPath: history.location.pathname,
       onNavigate({ pathname: nextPathname }) {
         const { pathname } = history.location;
+        console.log(pathname);
         if (pathname !== nextPathname) {
           history.push(nextPathname);
         }
