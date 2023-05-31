@@ -17,7 +17,6 @@ export default () => {
         }
       },
     });
-
     history.listen(onParentNavigate);
   }, []);
 
