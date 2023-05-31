@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   '@global': {
     a: {
       textDecoration: 'none',
-      color: red,
+      color: 'red',
     },
   },
   paper: {
