@@ -16,6 +16,9 @@ export default () => {
           history.push(nextPathname);
         }
       },
+      onSignIn() {
+        console.log('signed in');
+      }
     });
     history.listen(onParentNavigate);
   }, []);
