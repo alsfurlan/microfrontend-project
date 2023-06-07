@@ -13,6 +13,7 @@ const generateClassName = createGenerateClassName({
 
 const MarketingAppLazyLoading = lazy(() => import("./components/MarketingApp"));
 const AuthAppLazyLoading = lazy(() => import("./components/AuthApp"));
+const DashboardLazyLoading = lazy(() => import('./components/DashboardApp'));
 
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -26,6 +27,7 @@ export default () => {
               <Route path="/auth">
                 <AuthAppLazyLoading onSignIn={() => setIsSignedIn(true)}/>
               </Route>
+              <Route path="/dashboard" component={DashboardLazyLoading}/>
               <Route path="/" component={MarketingAppLazyLoading}></Route>
             </Switch>
           </Suspense>
