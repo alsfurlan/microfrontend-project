@@ -107,7 +107,6 @@
         </ul>
       </Panel>
     </div>
-
     <div class="p-col-12 p-md-6 p-lg-4 p-fluid contact-form">
       <Panel header="Contact Us">
         <div class="p-grid">
